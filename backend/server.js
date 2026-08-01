@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
   res.send("Edge.pk API is running.");
 });
 
-app.listen(PORT, () => {
-  console.log(`Edge.pk backend running at http://localhost:${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Edge.pk backend running at http://localhost:${PORT}`);
+  });
+}
+
+export default app;
