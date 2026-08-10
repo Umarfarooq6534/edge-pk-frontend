@@ -27,7 +27,7 @@ export default function Checkout() {
     try {
       const order = await createOrder({
         ...form,
-        items: items.map((i) => ({
+        items: items.map((i) => ({s
           productId: i.productId,
           size: i.size,
           quantity: i.quantity
@@ -41,12 +41,18 @@ export default function Checkout() {
       setSubmitting(false);
     }
   }
-
+   function whatsappLink() {
+    const itemsText = items.map((i) => `${i.name} (${i.size}) x${i.quantity}`).join(", ");
+    const message = `Hi EDGE! I have a question about my order: ${itemsText}`;
+    return `https://wa.me/923218698927?text=${encodeURIComponent(message)}`;
+  }
   return (
     <div className="checkout">
       <h2>Checkout</h2>
       <p className="cod-note">Payment: Cash on Delivery</p>
-
+	  <a href={whatsappLink()} target="_blank" rel="noreferrer" className="whatsapp-chat-link">
+        Have a question? Chat with us on WhatsApp
+      </a>
       <form onSubmit={handleSubmit}>
         <label>
           Full Name

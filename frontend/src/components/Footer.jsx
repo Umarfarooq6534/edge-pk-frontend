@@ -8,9 +8,9 @@ export default function Footer() {
         EDGE
       </div>
       <ul className="footer-links">
-        <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
-        <li><a href="https://wa.me/" target="_blank" rel="noreferrer">WhatsApp</a></li>
-        <li><Link to="/about">Contact</Link></li>
+       <li><a href="https://www.instagram.com/edge.pk_/" target="_blank" rel="noreferrer">Instagram</a></li>
+       <li><a href="https://wa.me/923218698927" target="_blank" rel="noreferrer">WhatsApp</a></li>
+       <li><a href="mailto:edgeee456@gmail.com">Email</a></li>
       </ul>
       <div className="footer-meta">© 2026 EDGE — OWN_THE_EDGE.SYS</div>
     </footer>
