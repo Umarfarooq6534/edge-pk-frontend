@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation";
+import About from "./pages/About";
 import "./styles.css";
 
 export default function App() {
@@ -20,8 +22,10 @@ export default function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/order-confirmation" element={<OrderConfirmation />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }

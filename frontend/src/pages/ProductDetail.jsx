@@ -27,7 +27,9 @@ export default function ProductDetail() {
 
   return (
     <div className="product-detail">
-      <div className="product-detail-img" />
+    <div className="product-detail-img product-placeholder">
+  <span>Photo coming soon</span>
+</div>
       <div className="product-detail-info">
         <h2>{product.name}</h2>
         <p className="price">Rs. {product.price.toLocaleString()}</p>

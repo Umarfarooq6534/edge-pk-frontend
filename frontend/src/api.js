@@ -2,7 +2,7 @@
 // When we deploy, we'll change API_BASE from localhost to the live Render URL —
 // every other file just imports from here, so we only change it in one spot.
 
-const API_BASE = "https://edge-pk.vercel.app/api";
+const API_BASE = "http://localhost:5000/api";
 
 export async function getProducts() {
   const res = await fetch(`${API_BASE}/products`);
