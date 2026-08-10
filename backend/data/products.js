@@ -30,14 +30,5 @@ export let products = [
     description: "Bold typographic back print, 220 GSM cotton.",
     stock: { S: 8, M: 14, L: 12, XL: 5 }
   }
-  ,
-  {
-    id: "edg-ts-004",
-    name: "Studio Tee",
-    price: 2099,
-    sizes: ["S", "M", "L", "XL"],
-    image: "/images/studio-tee.jpg",
-    description: "Relaxed fit, 220 GSM cotton.",
-    stock: { S: 8, M: 12, L: 10, XL: 6 }
-  }
+  
 ];
