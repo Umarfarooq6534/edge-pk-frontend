@@ -36,7 +36,8 @@ export default function Cart() {
         </div>
       ))}
       <div className="cart-total">Total: Rs. {total.toLocaleString()}</div>
-      <Link to="/checkout" className="cta">Proceed to Checkout →</Link>
+<p className="free-shipping-note">Free shipping on all orders</p>
+<Link to="/checkout" className="cta">Proceed to Checkout →</Link>
     </div>
   );
 }

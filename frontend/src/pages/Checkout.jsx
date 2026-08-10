@@ -72,7 +72,7 @@ export default function Checkout() {
         </label>
 
         <div className="checkout-total">Total: Rs. {total.toLocaleString()}</div>
-
+        <p className="free-shipping-note">Free shipping on all orders</p>
         {error && <p className="status error">{error}</p>}
 
         <button type="submit" className="cta" disabled={submitting}>
