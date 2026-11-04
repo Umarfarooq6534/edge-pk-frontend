@@ -27,7 +27,7 @@ export default function Checkout() {
     try {
       const order = await createOrder({
         ...form,
-        items: items.map((i) => ({s
+        items: items.map((i) => ({
           productId: i.productId,
           size: i.size,
           quantity: i.quantity
